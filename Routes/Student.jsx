@@ -1,7 +1,7 @@
 // TODO: answer here
-
+import React from 'react';
 import { useEffect, useState } from "react";
-import { Link, Outlet } from'react-router-dom';
+import { Link } from'react-router-dom';
 import Navbar from '../components/Navbar'
 
 const Student = () => {

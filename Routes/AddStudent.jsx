@@ -1,5 +1,5 @@
 // TODO: answer here
-
+import React from "react";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import NavBar from "../components/Navbar";
@@ -63,7 +63,7 @@ const AddStudent = () => {
     };
 
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
       event.preventDefault();
 
       const newStudent = {
@@ -77,7 +77,7 @@ const AddStudent = () => {
         programStudy: programStudy,
       };
 
-      addStudent(newStudent);
+      await addStudent(newStudent);
 
       setFullName("");
       setBirthDate("");
